@@ -1,0 +1,333 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(assets/fonts/Ubuntu-Regular.ttf);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 100%, 97%);
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Ubuntu;
+    width: 1440px;
+    color: hsl(213, 96%, 18%);
+}
+.site{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 1000px;
+    height: 627px;
+    display: flex;
+}
+
+.sidebar{
+    background-color: hsl(243, 100%, 62%);
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    height: 568px;
+    width: 274px;
+    border-radius: 10px;
+    margin: 15px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+
+    color:hsl(0, 0%, 100%);
+}
+
+.sb-cnt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.step{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 10px 30px;
+}
+
+.number{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    margin-right: 20px;
+    font-weight: 800;
+}
+#curentPage{
+    background-color: hsl(206, 94%, 87%);
+    border-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+.content{
+    flex-wrap: wrap;
+    position: relative;
+    top: -3px;
+}
+p{
+    margin-top: 3px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+}
+
+.main{
+    border-radius: 10px;
+    width: 70%;
+    margin: 10px 10px 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.ctn{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: relative;
+    width: 13cm;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+input{
+    margin: 30px 0;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: solid hsl(229, 24%, 87%);
+}
+input::placeholder{
+    color: hsl(229, 24%, 87%);
+    font-weight: 500;
+}
+
+button{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    height: 47px;
+    width: 115px;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1{
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.ctn p{
+    color: hsl(231, 11%, 63%);
+}
+
+label{
+    position: relative;
+    bottom: -23px;
+    font-weight: 700;
+}
+/*Page 2*/
+
+.plans{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+}
+.plan-ctn{
+    border: solid hsla(229, 24%, 87%,.5);
+    border-radius: 10px;
+    width: 140px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+}
+.plan-ctn:hover{
+    border: solid hsl(243, 100%, 62%);
+}
+.plan-ctn img{
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.text{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+.text h3{
+    position: relative;
+    top: 15px;
+}
+#active{
+    color: hsl(213, 96%, 18%);
+}
+
+.time{
+    display: flex;
+    margin-top: 35px;
+    background-color: hsl(231, 100%, 99%);
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    border-radius: 7px;
+}
+.time-ctn{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 25px;
+}
+.togle-on{
+    background-color: hsl(213, 96%, 18%);
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.togle-on div{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+#goback{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    font-weight: 700;
+    color: hsl(231, 11%, 63%);
+    text-decoration: none;
+}
+#goback:hover{
+    color: hsl(213, 96%, 18%);
+}
+
+/*page 3*/
+
+.add{
+    display: flex;
+    border: solid hsl(243, 100%, 62%);
+    border-radius: 10px;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    height: 80px;
+}
+.price{
+    position: absolute;
+    right: 25px;
+    color: hsl(243, 100%, 62%);
+    font-weight: 700;
+}
+.checkbox{
+    height: 20px;
+    width: 20px;
+    margin: 0 20px;
+}
+.add-ctn{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4{
+    font-weight: 700;
+    margin: 2px;
+}
+.add-ctn p {
+    font-size: 14px;
+    margin: 2px;
+}
+
+/*page 4*/
+
+#confirm{
+    background-color: hsl(243, 100%, 62%);
+}
+
+.checking{
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 10px;
+    margin: 33px 0;
+}
+.change{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 20px;
+}
+.change a,.change h3{
+    margin: 5px;
+}
+.v2{
+    color: hsl(213, 96%, 18%);
+}
+.v3{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.v4{
+    font-size: 19px;
+}
+hr{
+    width: 89%;
+    background-color: hsl(206, 94%, 87%);
+}
+.added{
+    display: flex;
+    padding-left: 20px;
+}
+.total{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/*Thank you*/
+
+.thankyou img{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.thankyou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thankyou p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+.thankyou h1{
+    font-weight: 700;
+}
